@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make website easy tutorial</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body , html{
+            overflow-x: hidden;
+        } 
+      .navbar {
+        position: absolute;
+        top: 0px;   /*important step*/
+        left: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 22px;
+        color: white;
+      }
+      ul {
+        list-style: none;
+        /* text-decoration: none; */
+      }
+      ul a {
+        color: white;
+        text-decoration: none;
+        background: transparent;
+        border-radius: 23px;
+        border: 2px solid white;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+      .nav-links li a {
+        margin:  0px 12px;
+        display: block;
+        padding: 12px 13px;
+        margin-right: 55px; 
+      }
+      .toggle-menu {
+        position: absolute;
+        top: 2rem;
+        right: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        /* display: none; */
+      }
+
+      .toggle-menu .bar {
+        height: 3px;
+        width: 100%;
+        /* border: 2px solid white; */
+        background-color: white;
+        border-radius: 10px;
+      }
+      @media (max-width: 879px) {
+        .toggle-menu {
+          display: flex;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+      @media (min-width: 879px) {
+        .toggle-menu {
+          display: none;
+        }
+      }
+
+      header {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(#c847f1, #380131);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: center
+        ;
+        justify-content: center;
+        /* left: 22px; */
+      }
+     
+      .header-content a {
+        text-decoration: none;
+      }
+      .header-content {
+        margin-bottom: -120px;
+        color: white;
+        text-align: left;
+        /* left: 100px; */
+       
+        /* border: 2px solid white; */
+        height: 222px;
+      }
+      .header-content h2 {
+        font-size: 3vmin; 
+        margin: 22px 0px;/* bhai responsiveness k liye */
+      }
+      .header-content h1{
+        font-size: 9vmin ;
+        margin-top: 2px;
+        margin-bottom: 20px;
+      }
+   
+      .header-content .btn{
+        padding: 8px 18px;
+        background: crimson;
+        border-radius: 30px;
+        color: rgb(37, 29, 29);
+        margin: 337px 0px;
+      }
+      /* .home-img img{
+        width: 30px;
+        height: 30px;
+        min-width: 250px;
+         margin-top: 10%; 
+      }
+       */
+      /* .top-bar {
+        background-image: linear-gradient(#c847f1, #380131);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        width: 98%;
+        justify-content: space-between;
+        padding: 0px;
+        /* color: rgb(65, 36, 36); */
+      /* }
+      .top-bar {
+        padding: 20px;
+      }
+       .top-bar .top-button a{
+           text-decoration: none;
+           color: white;
+          
+
+       }
+       ul{
+           list-style: none;
+       }
+       .nav-links{
+           display: flex;
+           align-items: center;
+       }
+
+       .top-button a{
+        margin:18px 44px;
+        display: block;  
+        padding: 0.4rem;
+       }
+    
+      .top-bar img {
+        width: 80px;
+      } */
+    </style>
+  </head>
+  <body> 
+   
+    <!-- <section class="hero">
+      <div class="top-bar">
+        <img
+          src="img/—Pngtree—young man with earphones listening_5424711.png"
+          alt="logo"
+        />
+        <div class="top-button">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About</a></li>
+                <li class="btn"><a href="#">Contact</a></li>
+              </ul>
+             
+
+
+        </div>
+      </div>
+    </section> -->
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <a href="#" class="toggle-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li class="btn"><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- <img src="imgproject/menu-btn.png" class="menu-btn" alt="Menu Bar"> -->
+    </nav>
+    <header class="header-class">
+        <div class="header-content">
+          <h1>Awesome Site</h1>
+          <!-- <div class="line"></div> -->
+          <h2>A WONDERFUL GIFT</h2>
+          <a href="#" class="btn">Learn More</a>
+          <!-- <img class="home-img" src="img/pexels-juan-mendez-1536619.jpg" alt=""> -->
+        </div>
+       
+      </header>
+      <section class="influencers " >
+
+      </section>
+   
+  </body>
+</html>
